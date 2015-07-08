@@ -6,22 +6,38 @@ a {
 
 /***** Navigation and Spacing *****/
 nav {    
-  width: 150px;
+  width: 180px;
   float: left;
   display: inline;
   margin: 0;
   padding: 0;
+  margin-top: 120px;
   margin-right: 10px;
   position: fixed;
+  background-color: yellow;
 }
 
+
 section#main{
-  width: 500;
-  float: left;
+  width: 80%;
+  float: right;
   margin: 0;
+  margin-top: 120px;
   padding: 0;
   display: inline;     
 }
+
+/***** Logo Banner *****/
+
+#test {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    display: inline;
+    text-align: center;
+    background-color: teal;
+}  
+
 
 /***** Footer *****/
 footer {
