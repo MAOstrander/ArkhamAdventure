@@ -84,6 +84,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="amanda-sharpe.html" />
+    <Content Include="ashcan-pete.html" />
+    <Content Include="bob-jenkins.html" />
+    <Content Include="carolyn-fern.html" />
+    <Content Include="darrell-simmons.html" />
+    <Content Include="dexter-drake.html" />
+    <Content Include="gloria-goldberg.html" />
+    <Content Include="harvey-walters.html" />
+    <Content Include="innsmouth.html" />
+    <Content Include="jenny-barnes.html" />
+    <Content Include="joe-diamond.html" />
+    <Content Include="kate-winthrop.html" />
+    <Content Include="mandy-thompson.html" />
+    <Content Include="michael-mcglen.html" />
+    <Content Include="original-characters.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
