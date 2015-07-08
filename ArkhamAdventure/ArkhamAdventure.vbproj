@@ -83,13 +83,18 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="agnes-baker.html" />
+    <Content Include="akachi-onyele.html" />
     <Content Include="amanda-sharpe.html" />
     <Content Include="ashcan-pete.html" />
     <Content Include="bob-jenkins.html" />
     <Content Include="carolyn-fern.html" />
     <Content Include="darrell-simmons.html" />
     <Content Include="dexter-drake.html" />
+    <Content Include="finn-edwards.html" />
+    <Content Include="george-barnaby.html" />
     <Content Include="gloria-goldberg.html" />
+    <Content Include="hank-samson.html" />
     <Content Include="harvey-walters.html" />
     <Content Include="innsmouth.html" />
     <Content Include="jenny-barnes.html" />
@@ -97,7 +102,9 @@
     <Content Include="kate-winthrop.html" />
     <Content Include="mandy-thompson.html" />
     <Content Include="michael-mcglen.html" />
+    <Content Include="minh-thi-phan.html" />
     <Content Include="monterey-jack.html" />
+    <Content Include="norman-withers.html" />
     <Content Include="original-characters.html" />
     <Content Include="index.html" />
     <Content Include="sister-mary.html" />
