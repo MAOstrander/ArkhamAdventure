@@ -1,6 +1,32 @@
 /***** General things *****/
+@font-face {
+    font-family: Birmingham;
+    src: url(Birmingham.ttf);
+}
+
+body{
+    background-image: url("images/cthulu.jpg");
+    background-size: cover;
+    background-color: rgb(39,31,18);
+}
+
 a {
   text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+:target {
+    display: block;    
+    position: relative;     
+    top: -120px;
+    visibility: hidden;
 }
 
 
@@ -10,40 +36,71 @@ nav {
   float: left;
   display: inline;
   margin: 0;
-  padding: 0;
+  padding-top: 100;
   margin-top: 120px;
   margin-right: 10px;
   position: fixed;
-  background-color: yellow;
+  font-family: Birmingham;
+  background-image: url("images/navmid.png");
 }
 
 
 section#main{
-  width: 80%;
   float: right;
   margin: 0;
-  margin-top: 120px;
-  padding: 0;
-  display: inline;     
+  margin-left: 180px;
+  padding: 7%;
+  display: inline;
+  background-image: url("images/Blank.png");
+  background-size: contain;
+  text-shadow: 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 /***** Logo Banner *****/
 
-#test {
+#logo {
     width: 100%;
     height: 120px;
     position: fixed;
     display: inline;
+    font-family: Birmingham;
     text-align: center;
-    background-color: teal;
+    background-image: url("images/mythos2.png");
+    background-size: cover;
+    color: white;
+
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(255,255,255,.1),
+               0 0 5px rgba(255,255,255,.1),
+               0 1px 3px rgba(255,255,255,.3),
+               0 3px 5px rgba(255,255,255,.2),
+               0 5px 10px rgba(255,255,255,.25),
+               0 10px 10px rgba(255,255,255,.2),
+               0 20px 20px rgba(255,255,255,.15);
+
 }  
+
+
+#bannerspace {
+    width: 100%;
+    height:120px;
+    display: inline-block;
+    clear: both;
+} 
 
 
 /***** Footer *****/
 footer {
   font-size: 0.75em;
+  font-family: Birmingham;
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #fff;
+  background-image: url("images/mythos2.png");
+  background-size: cover;
 }

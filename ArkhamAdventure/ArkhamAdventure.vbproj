@@ -84,6 +84,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="characters.html" />
+    <Content Include="images\Blank.png" />
+    <Content Include="images\mythos.png" />
+    <Content Include="images\navbottom.png" />
+    <Content Include="images\Navi.png" />
+    <Content Include="images\navmid.png" />
+    <Content Include="images\navtop.png" />
     <Content Include="index.html" />
     <Content Include="main.css" />
     <Content Include="normalize.css" />
