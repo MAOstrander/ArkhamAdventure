@@ -85,7 +85,10 @@
   <ItemGroup>
     <Content Include="characters.html" />
     <Content Include="images\Blank.png" />
+    <Content Include="images\cthulu.jpg" />
+    <Content Include="images\cthulu2.jpg" />
     <Content Include="images\mythos.png" />
+    <Content Include="images\mythos2.png" />
     <Content Include="images\navbottom.png" />
     <Content Include="images\Navi.png" />
     <Content Include="images\navmid.png" />
@@ -126,6 +129,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Birmingham.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
