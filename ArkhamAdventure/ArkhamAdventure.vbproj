@@ -83,10 +83,41 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="characters.html" />
+    <Content Include="characters\agnes-baker.html" />
+    <Content Include="characters\akachi-onyele.html" />
+    <Content Include="characters\amanda-sharpe.html" />
+    <Content Include="characters\ashcan-pete.html" />
+    <Content Include="characters\bob-jenkins.html" />
+    <Content Include="characters\carolyn-fern.html" />
+    <Content Include="characters\darrell-simmons.html" />
+    <Content Include="characters\dexter-drake.html" />
+    <Content Include="characters\finn-edwards.html" />
+    <Content Include="characters\george-barnaby.html" />
+    <Content Include="characters\gloria-goldberg.html" />
+    <Content Include="characters\hank-samson.html" />
+    <Content Include="characters\harvey-walters.html" />
+    <Content Include="innsmouth.html" />
+    <Content Include="characters\jenny-barnes.html" />
+    <Content Include="characters\joe-diamond.html" />
+    <Content Include="characters\kate-winthrop.html" />
+    <Content Include="characters\mandy-thompson.html" />
+    <Content Include="characters\michael-mcglen.html" />
+    <Content Include="characters\minh-thi-phan.html" />
+    <Content Include="characters\monterey-jack.html" />
+    <Content Include="characters\norman-withers.html" />
+    <Content Include="original-characters.html" />
     <Content Include="index.html" />
-    <Content Include="slang.html" />
+    <Content Include="characters\patrice-hathaway.html" />
+    <Content Include="characters\roland-banks.html" />
+    <Content Include="characters\silas-marsh.html" />
+    <Content Include="characters\sister-mary.html" />
+    <Content Include="characters\tommy-muldoon.html" />
+    <Content Include="characters\trish-scarborough.html" />
+    <Content Include="characters\ursula-downs.html" />
+    <Content Include="characters\vincent-lee.html" />
     <Content Include="Web.config" />
+    <Content Include="characters\william-yorick.html" />
+    <Content Include="zoey-samaras.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
