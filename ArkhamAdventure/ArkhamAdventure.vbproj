@@ -107,9 +107,17 @@
     <Content Include="norman-withers.html" />
     <Content Include="original-characters.html" />
     <Content Include="index.html" />
+    <Content Include="patrice-hathaway.html" />
+    <Content Include="roland-banks.html" />
+    <Content Include="silas-marsh.html" />
     <Content Include="sister-mary.html" />
+    <Content Include="tommy-muldoon.html" />
+    <Content Include="trish-scarborough.html" />
+    <Content Include="ursula-downs.html" />
     <Content Include="vincent-lee.html" />
     <Content Include="Web.config" />
+    <Content Include="william-yorick.html" />
+    <Content Include="zoey-samaras.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
