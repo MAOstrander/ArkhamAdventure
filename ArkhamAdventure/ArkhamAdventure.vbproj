@@ -83,7 +83,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-  <Content Include="characters.html" />
+    <Content Include="characters.html" />
+    <Content Include="characters\skids-otoole.html" />
     <Content Include="images\Blank.png" />
     <Content Include="images\cthulu.jpg" />
     <Content Include="images\cthulu2.jpg" />
