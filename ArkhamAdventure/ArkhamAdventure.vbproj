@@ -83,6 +83,16 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+  <Content Include="characters.html" />
+    <Content Include="images\Blank.png" />
+    <Content Include="images\cthulu.jpg" />
+    <Content Include="images\cthulu2.jpg" />
+    <Content Include="images\mythos.png" />
+    <Content Include="images\mythos2.png" />
+    <Content Include="images\navbottom.png" />
+    <Content Include="images\Navi.png" />
+    <Content Include="images\navmid.png" />
+    <Content Include="images\navtop.png" />
     <Content Include="characters\agnes-baker.html" />
     <Content Include="characters\akachi-onyele.html" />
     <Content Include="characters\amanda-sharpe.html" />
@@ -107,6 +117,8 @@
     <Content Include="characters\norman-withers.html" />
     <Content Include="original-characters.html" />
     <Content Include="index.html" />
+    <Content Include="main.css" />
+    <Content Include="normalize.css" />
     <Content Include="characters\patrice-hathaway.html" />
     <Content Include="characters\roland-banks.html" />
     <Content Include="characters\silas-marsh.html" />
@@ -149,6 +161,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Birmingham.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
