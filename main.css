@@ -1,0 +1,92 @@
+/***** General things *****/
+@font-face {
+    font-family: Birmingham;
+    src: url(Birmingham.ttf);
+}
+
+body{
+    background-image: url("images/cthulu.jpg");
+    background-size: cover;
+    background-color: rgb(39,31,18);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+:target {
+    display: block;    
+    position: relative;     
+    top: -120px;
+    visibility: hidden;
+}
+
+
+/***** Navigation and Spacing *****/
+nav {    
+  width: 180px;
+  float: left;
+  display: inline;
+  margin: 0;
+  padding-top: 100;
+  margin-top: 120px;
+  margin-right: 10px;
+  position: fixed;
+  font-family: Birmingham;
+  background-image: url("images/navmid.png");
+}
+
+
+section#main{
+  float: right;
+  margin: 0;
+  margin-left: 180px;
+  padding: 7%;
+  display: inline;
+  background-image: url("images/Blank.png");
+  background-size: contain;
+  text-shadow: 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/***** Logo Banner *****/
+
+#logo {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    display: inline;
+    font-family: Birmingham;
+    text-align: center;
+    background-image: url("images/mythos2.png");
+    background-size: cover;
+    color: white;
+}  
+
+
+#bannerspace {
+    width: 100%;
+    height:120px;
+    display: inline-block;
+    clear: both;
+} 
+
+
+/***** Footer *****/
+footer {
+  font-size: 0.75em;
+  font-family: Birmingham;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #fff;
+  background-image: url("images/mythos2.png");
+  background-size: cover;
+}
