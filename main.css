@@ -53,6 +53,11 @@ section#main li::before {
   content: "\2023    "
 }
 
+section#main a {
+  float: right;
+  font-size: .75em;
+}
+
 /***** Navigation and Spacing *****/
 nav {    
   font-family: Birmingham;
