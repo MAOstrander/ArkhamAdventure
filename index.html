@@ -17,10 +17,10 @@
             <h1>Arkham Adventure</h1>
         </div>
     </header>
-    <div id="bannerspace">&nbsp;</div>
 
+    <div class="col-xs-1"></div>
     <!-- These will be the main index navigation tabs and used for menu tabs elsewhere -->
-    <div>
+    <div class="col-xs-10">
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -33,16 +33,127 @@
       <div class="tab-content">
         <!-- Before the game-->
         <div role="tabpanel" class="tab-pane active" id="setup">
-            <ul>
-                <li>Character profiles and stats</li> 
-                <li>Character randomized selector</li>
-                <li>Ancient One randomized selector</li>
-                <li>Game setup automater</li>
-                <li>Ancient One profiles and stats</li>
-                <li>Heralds</li>
-                <li>Monster Gallery (Bestiary)</li>
-            </ul>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Character profiles and stats
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="list-group">
+                    <ul>
+                        <li>Agnes Baker</li>
+                        <li>Akachi Onyele</li>
+                        <li>Amanda Sharpe</li>
+                        <li>Ashcan Pete</li>
+                        <li>Bob Jenkins</li>
+                        <li>Carolyn Fern</li>
+                        <li>Darrell Simmons</li>
+                        <li>Dexter Drake</li>
+                        <li>Finn Edwards</li>
+                        <li>George Barnaby</li>
+                        <li>Gloria Goldberg</li>
+                        <li>Hank Samson</li>
+                        <li>Harvey Walters</li>
+                        <li>Jenny Barnes</li>
+                        <li>Joe Diamond</li>
+                        <li>Kate Winthrop</li>
+                        <li>Mandy Thompson</li>
+                        <li>Michael McGlen</li>
+                        <li>Minh Thi Phan</li>
+                        <li>Monterey Jack</li>
+                        <li>Norman Withers</li>
+                        <li>Patrice Hathaway</li>
+                        <li>Roland Banks</li>
+                        <li>Silas Marsh</li>
+                        <li>Sister Mary</li>
+                        <li>Skids O'Toole</li>
+                        <li>Tommy Muldoon</li>
+                        <li>Trish Scarborough</li>
+                        <li>Ursula Downs</li>
+                        <li>Vincent Lee</li>
+                        <li>William Yorick</li>
+                        <li>Zoey Samara</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Randomizers and Setup
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="list-group">
+                    <ul>
+                        <li>Character randomized selector</li>
+                        <li>Ancient One randomized selector</li>
+                        <li>Game setup automater</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Ancient One Profiles
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="list-group">
+                    <ul>
+                        <li>Cthulu</li>
+                        <li>Astaroth</li>
+                        <li>Nyarlothotep</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Heralds
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="list-group">
+                    <ul>
+                        <li>Father Dragon</li>
+                        <li>Mother Hydra</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                          Monster Gallery (Bestiary)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="list-group">
+                        <ul>
+                            <li>Arkham</li>
+                            <li>Innsmouth</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
+
         <!-- During the game-->
         <div role="tabpanel" class="tab-pane" id="ambiance">
             <ul>
@@ -62,8 +173,7 @@
             </ul>
         </div>
       </div>
-
-    </div>
+      <div class="col-xs-1"></div>
 
     <footer>
         <p>2015 Trisha Sengupta and Mathew Ostrander</p>
