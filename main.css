@@ -1,7 +1,7 @@
 /***** General things *****/
 @font-face {
-    font-family: Birmingham;
-    src: url(Birmingham.ttf);
+  font-family: Birmingham;
+  src: url(Birmingham.ttf);
 }
 
 body{
@@ -10,24 +10,58 @@ body{
   min-width: 280px;
 }
 
-a:link {
-    color: black;
+a:link, a:visited {
+  color: black;
 }
-
-a:visited {
-    color: black;
+h1 > a:link, h1 > a:visited {
+  color: white;
 }
 
 .list-group {
   color: black;
 }
 
+/*Slang page background*/
 section#main{
   padding: 7%;
-  background-image: url("images/Blank.png");
+  background-image: url("images/Blank.png"); /*Now that I have photoshop I should make this a column instead of box*/
   background-size: contain;
   color: black;
   text-shadow: 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+section#main > h1 {
+  font-family: Birmingham;
+  font-size: 1.8em;
+}
+
+section#main h2 {
+  font-family: Birmingham;
+  font-size: 1.4em;
+}
+
+section#main h3 {
+  font-family: Birmingham;
+  font-size: 1.2em;
+}
+
+section#main ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+section#main li::before {
+  content: "\2023    "
+}
+
+/***** Navigation and Spacing *****/
+nav {    
+  font-family: Birmingham;
+  max-width: 300px;
+  background-image: url("images/navmid.png");
+}
+nav img {
+  width: 100%;
+  max-width: 300px;
 }
 
 /***** Logo Banner *****/
@@ -54,5 +88,5 @@ footer {
 /*@media screen and (min-width: 200px) {
   .small-screens {
     display: none;
-  }*/
-}
+  }
+}*/
