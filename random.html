@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arkham Adventure Randomizer</title>
+</head>
+
+<body>
+
+	<div id="investigators">
+		<h3>Investigators</h3>
+		<input type="checkbox" name="investigator" value="Amanda Sharpe">Amanda Sharpe
+		<input type="checkbox" name="investigator" value="Ashcan Pete">Ashcan Pete
+		<input type="checkbox" name="investigator" value="Bob Jenkins">Bob Jenkins
+		<input type="checkbox" name="investigator" value="Carolyn Fern">Carolyn Fern
+		<input type="checkbox" name="investigator" value="Darrell Simmons">Darrell Simmons
+		<input type="checkbox" name="investigator" value="Dexter Drake">Dexter Drake
+		<input type="checkbox" name="investigator" value="Gloria Goldberg">Gloria Goldberg
+		<input type="checkbox" name="investigator" value="Harvey Walters">Harvey Walters
+		<input type="checkbox" name="investigator" value="Jenny Barnes">Jenny Barnes
+		<input type="checkbox" name="investigator" value="Joe Diamond">Joe Diamond
+		<input type="checkbox" name="investigator" value="Kate Winthrop">Kate Winthrop
+		<input type="checkbox" name="investigator" value="Mandy Thompson">Mandy Thompson
+		<input type="checkbox" name="investigator" value="Michael McGlen">Michael McGlen
+		<input type="checkbox" name="investigator" value="Monterey Jack">Monterey Jack
+		<input type="checkbox" name="investigator" value="Sister Mary">Sister Mary
+		<input type="checkbox" name="investigator" value="Vincent Lee">Vincent Lee
+	</div>
+	<div>
+		<button id="checkAllInv">Check all Investigators</button>
+	</div>
+	<div>
+		<button id="pickCharacters">Choose Characters</button>
+	  	<label for="player-number">Number of Players:</label>
+		<select id="player-number" name="player-number">
+          <option value="1" selected="">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+	</div>
+	<div id="ancientones">
+		<h3>Ancient Ones</h3>
+		<div class="base-game">
+			<input type="checkbox" name="ancientone" value="Azathoth" set="arkham">Azathoth
+			<input type="checkbox" name="ancientone" value="Cthulu" set="arkham">Cthulu
+			<input type="checkbox" name="ancientone" value="Hastur" set="arkham">Hastur
+			<input type="checkbox" name="ancientone" value="Ithaqua" set="arkham">Ithaqua
+			<input type="checkbox" name="ancientone" value="Nyarlathotep" set="arkham">Nyarlathotep
+			<input type="checkbox" name="ancientone" value="Shub-Niggurath" set="arkham">Shub-Niggurath
+			<input type="checkbox" name="ancientone" value="Yig" set="arkham">Yig
+			<input type="checkbox" name="ancientone" value="Yog-Sothoth" set="arkham">Yog-Sothoth
+		</div>
+		<div class="dunwich-horror">
+			<input type="checkbox" name="ancientone" value="Abhoth" set="dunwich">Abhoth
+			<input type="checkbox" name="ancientone" value="Glaaki" set="dunwich">Glaaki
+			<input type="checkbox" name="ancientone" value="Shudde M'ell" set="dunwich">Shudde M'ell
+			<input type="checkbox" name="ancientone" value="Tsathoggua" set="dunwich">Tsathoggua
+		</div>
+	</div>
+	<div>
+		<h4>Choose Ancient Ones by Expansion</h4>
+		<input type="checkbox" id="checkAllAO">Check all Ancient Ones
+		<input type="checkbox" name="check-control" value="arkham">Base Arkham Set
+		<input type="checkbox" name="check-control" value="dunwich">Dunwich Expansion
+	</div>
+	<div>
+		<button id="pickAncientOne">Choose Ancient One</button>
+	</div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="randomizer.js"></script>
+</body>
+</html>
