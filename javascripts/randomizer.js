@@ -19,20 +19,20 @@ function chooseMe(checkedArray, numChoices) {
 var yark = [];
 $(document).ready(function() {
 
-  $("#pickCharacters").click(function(){
+  function pickCharacters() {
     var numPlayers = $("#player-number").val();
     console.log("number of players", numPlayers);
     yark = $(':checkbox[name=investigator]').map(function () {
     if (this.checked) {
       return this.value;
     }
-  });
+    });
 
-  var chosen = chooseMe(yark, numPlayers);
-  console.log("Hero:", chosen);
-  });
+    var chosen = chooseMe(yark, numPlayers);
+    console.log("Hero:", chosen);
+  };
 
-  $("#pickAncientOne").click(function(){
+  function pickAncientOne(){
   yark = $(':checkbox[name=ancientone]').map(function () {
     if (this.checked) {
       return this.value;
@@ -40,7 +40,10 @@ $(document).ready(function() {
   });
   var chosen = chooseMe(yark, 1);
   console.log("Enemy:", chosen);
-  });
+  }
+
+  $("#pickCharacters").click(pickCharacters);
+  $("#pickAncientOne").click(pickAncientOne);
 
   $("#checkAllInv").click(function(event){
     $(':checkbox[name=investigator]').each(function() {
@@ -79,6 +82,11 @@ $(document).ready(function() {
         this.checked = false;
       });
     }
+  });
+
+  $("#pickAll").click(function(){
+    pickCharacters();
+    pickAncientOne();
   });
 
 
