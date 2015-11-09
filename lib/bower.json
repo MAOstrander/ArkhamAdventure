@@ -1,0 +1,22 @@
+{
+  "name": "modules",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mathew Ostrander <mathew.ostrander@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MAOstrander/ArkhamAdventure",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
