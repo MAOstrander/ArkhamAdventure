@@ -11,10 +11,10 @@ function chooseMe(checkedArray, numChoices) {
 
   //Use splice to remove chosen player from selected array for next player
   checkedArray.splice(random, 1);
-  };
+  }
 
   return chosenPlayers;
-};
+}
 
 var yark = [];
 $(document).ready(function() {
@@ -49,7 +49,6 @@ $(document).ready(function() {
   }); //end
 
 
-// is it better to include 'input', ':checkbox', or just '[name=?]'
   $("#checkAllAO").click(function(event){
     if ($(this).is(":checked")){
       $('input:checkbox[name=ancientone]').each(function() {
@@ -65,7 +64,7 @@ $(document).ready(function() {
       $('input:checkbox[name=check-control]').each(function() {
         this.checked = false;
       });
-    };
+    }
   }); //end
 
   $("input[name='check-control']").click(function() {
