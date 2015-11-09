@@ -13,8 +13,8 @@ requirejs.config({
 	}
 });
 
-require(["hbs"],
-	function(Handlebars) {
+require(["jquery", "bootstrap", "hbs", "phone"],
+	function($, bootstrap, Handlebars, phone) {
 
 
 	}

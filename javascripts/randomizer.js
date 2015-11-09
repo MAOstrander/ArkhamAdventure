@@ -1,23 +1,24 @@
-function chooseMe(checkedArray, numChoices) {
-  var chosenPlayers = [];
-  var random;
+define(["jquery"], function($) {
 
-  for (var i = 0; i < numChoices; i++){
-  // Get a random index from the array of checked investigators
-  random = Math.floor(Math.random()* checkedArray.length);
+  function chooseMe(checkedArray, numChoices) {
+    var chosenPlayers = [];
+    var random;
 
-  // Store which investigator that is
-  chosenPlayers[i] = checkedArray[random];
+    for (var i = 0; i < numChoices; i++){
+    // Get a random index from the array of checked investigators
+    random = Math.floor(Math.random()* checkedArray.length);
 
-  //Use splice to remove chosen player from selected array for next player
-  checkedArray.splice(random, 1);
+    // Store which investigator that is
+    chosenPlayers[i] = checkedArray[random];
+
+    //Use splice to remove chosen player from selected array for next player
+    checkedArray.splice(random, 1);
+    }
+
+    return chosenPlayers;
   }
 
-  return chosenPlayers;
-}
-
-var yark = [];
-$(document).ready(function() {
+  var yark = [];
 
   function pickCharacters() {
     var numPlayers = $("#player-number").val();
@@ -89,6 +90,11 @@ $(document).ready(function() {
     pickAncientOne();
   });
 
+  return {
+    chooseMe: chooseMe,
+    pickCharacters: pickCharacters,
+    pickAncientOne: pickAncientOne
+  };
 
-}); //end document ready function
 
+}); //END DEFINE FUNCTION
