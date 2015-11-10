@@ -20,162 +20,168 @@
         </div>
     </header>
 
-    <div class="col-xs-1"></div>
-    <!-- These will be the main index navigation tabs and used for menu tabs elsewhere -->
-    <div class="col-xs-10">
+    <div class="container-fluid">
+        <div class="row"> <!-- ROW STARTER -->
 
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#setup" aria-controls="setup" role="tab" data-toggle="tab">Setup</a></li>
-        <li role="presentation"><a href="#ambiance" aria-controls="ambiance" role="tab" data-toggle="tab">Ambiance</a></li>
-        <li role="presentation"><a href="#victory" aria-controls="victory" role="tab" data-toggle="tab">Victory</a></li>
-      </ul>
+          <div class="col-xs-1"></div>
+          <!-- These will be the main index navigation tabs and used for menu tabs elsewhere -->
+          <div class="col-xs-10">
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <!-- Before the game-->
-        <div role="tabpanel" class="tab-pane active" id="setup">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Character profiles and stats
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="list-group">
-                    <ul>
-                        <li>Agnes Baker</li>
-                        <li>Akachi Onyele</li>
-                        <li>Amanda Sharpe</li>
-                        <li>Ashcan Pete</li>
-                        <li>Bob Jenkins</li>
-                        <li>Carolyn Fern</li>
-                        <li>Darrell Simmons</li>
-                        <li>Dexter Drake</li>
-                        <li>Finn Edwards</li>
-                        <li>George Barnaby</li>
-                        <li>Gloria Goldberg</li>
-                        <li>Hank Samson</li>
-                        <li>Harvey Walters</li>
-                        <li>Jenny Barnes</li>
-                        <li>Joe Diamond</li>
-                        <li>Kate Winthrop</li>
-                        <li>Mandy Thompson</li>
-                        <li>Michael McGlen</li>
-                        <li>Minh Thi Phan</li>
-                        <li>Monterey Jack</li>
-                        <li>Norman Withers</li>
-                        <li>Patrice Hathaway</li>
-                        <li>Roland Banks</li>
-                        <li>Silas Marsh</li>
-                        <li>Sister Mary</li>
-                        <li>Skids O'Toole</li>
-                        <li>Tommy Muldoon</li>
-                        <li>Trish Scarborough</li>
-                        <li>Ursula Downs</li>
-                        <li>Vincent Lee</li>
-                        <li>William Yorick</li>
-                        <li>Zoey Samara</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Randomizers and Setup
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="list-group">
-                    <ul>
-                        <li>Character randomized selector <button id="quickPick1">Quick Pick One</button> <button id="quickPickAll">Quick Pick All</button></li>
-                        <li>Ancient One randomized selector <button id="quickAO">Quick Pick</button></li>
-                        <li>Game setup automater</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Ancient One Profiles
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="list-group">
-                    <ul>
-                        <li>Cthulu</li>
-                        <li>Astaroth</li>
-                        <li>Nyarlothotep</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Heralds
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="list-group">
-                    <ul>
-                        <li>Father Dragon</li>
-                        <li>Mother Hydra</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                          Monster Gallery (Bestiary)
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
-                      <div class="list-group">
-                        <ul>
-                            <li>Arkham</li>
-                            <li>Innsmouth</li>
-                        </ul>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#setup" aria-controls="setup" role="tab" data-toggle="tab">Setup</a></li>
+              <li role="presentation"><a href="#ambiance" aria-controls="ambiance" role="tab" data-toggle="tab">Ambiance</a></li>
+              <li role="presentation"><a href="#victory" aria-controls="victory" role="tab" data-toggle="tab">Victory</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Before the game-->
+              <div role="tabpanel" class="tab-pane active" id="setup">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Character profiles and stats
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="list-group">
+                          <ul>
+                              <li>Agnes Baker</li>
+                              <li>Akachi Onyele</li>
+                              <li>Amanda Sharpe</li>
+                              <li>Ashcan Pete</li>
+                              <li>Bob Jenkins</li>
+                              <li>Carolyn Fern</li>
+                              <li>Darrell Simmons</li>
+                              <li>Dexter Drake</li>
+                              <li>Finn Edwards</li>
+                              <li>George Barnaby</li>
+                              <li>Gloria Goldberg</li>
+                              <li>Hank Samson</li>
+                              <li>Harvey Walters</li>
+                              <li>Jenny Barnes</li>
+                              <li>Joe Diamond</li>
+                              <li>Kate Winthrop</li>
+                              <li>Mandy Thompson</li>
+                              <li>Michael McGlen</li>
+                              <li>Minh Thi Phan</li>
+                              <li>Monterey Jack</li>
+                              <li>Norman Withers</li>
+                              <li>Patrice Hathaway</li>
+                              <li>Roland Banks</li>
+                              <li>Silas Marsh</li>
+                              <li>Sister Mary</li>
+                              <li>Skids O'Toole</li>
+                              <li>Tommy Muldoon</li>
+                              <li>Trish Scarborough</li>
+                              <li>Ursula Downs</li>
+                              <li>Vincent Lee</li>
+                              <li>William Yorick</li>
+                              <li>Zoey Samara</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Randomizers and Setup
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="list-group">
+                          <ul>
+                              <li><a href="random.html#investigators">Character randomized selector</a> <button id="quickPick1">Quick Pick One</button> <button id="quickPickAll">Quick Pick All</button></li>
+                              <li><a href="random.html#ancientones">Ancient One randomized selector</a> <button id="quickAO">Quick Pick</button></li>
+                              <li><a href="random.html">Game setup automater</a> <button id="quickStart">Random Everything</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ancient One Profiles
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="list-group">
+                          <ul>
+                              <li>Cthulu</li>
+                              <li>Astaroth</li>
+                              <li>Nyarlothotep</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Heralds
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="list-group">
+                          <ul>
+                              <li>Father Dragon</li>
+                              <li>Mother Hydra</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Monster Gallery (Bestiary)
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="list-group">
+                              <ul>
+                                  <li>Arkham</li>
+                                  <li>Innsmouth</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                   </div>
-            </div>
-        </div>
+              </div>
 
-        <!-- During the game-->
-        <div role="tabpanel" class="tab-pane" id="ambiance">
-            <ul>
-                <li><a href="slang.html">Slang of the era</a></li>
-                <li>Music playlist to set the mood</li>
-                <li>Soundboard of effects</li>
-                <li>Randomized dice and widgets</li>
-                <li>Monster limits and open gate limits based on number of players</li>
-                <li>Game-state trackers</li>
-            </ul>
-        </div>
-        <!-- After the game -->
-        <div role="tabpanel" class="tab-pane" id="victory">
-            <ul>
-                <li>Score Tally</li>
-                <li>Game stats gallery</li>
-            </ul>
+              <!-- During the game-->
+              <div role="tabpanel" class="tab-pane" id="ambiance">
+                  <ul>
+                      <li><a href="slang.html">Slang of the era</a></li>
+                      <li>Music playlist to set the mood</li>
+                      <li>Soundboard of effects</li>
+                      <li>Randomized dice and widgets</li>
+                      <li>Monster limits and open gate limits based on number of players</li>
+                      <li>Game-state trackers</li>
+                  </ul>
+              </div>
+              <!-- After the game -->
+              <div role="tabpanel" class="tab-pane" id="victory">
+                  <ul>
+                      <li>Score Tally</li>
+                      <li>Game stats gallery</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1"></div>
         </div>
       </div>
-      <div class="col-xs-1"></div>
 
     <footer>
         <p>2015 Trisha Sengupta and Mathew Ostrander</p>

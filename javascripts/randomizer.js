@@ -23,7 +23,7 @@ define(["jquery"], function($) {
   function pickCharacters() {
     var numPlayers = $("#player-number").val();
     console.log("number of players", numPlayers);
-    yark = $(':checkbox[name=investigator]').map(function () {
+    yark = $(":checkbox[name='investigator']").map(function () {
     if (this.checked) {
       return this.value;
     }
@@ -34,7 +34,7 @@ define(["jquery"], function($) {
   };
 
   function pickAncientOne(){
-  yark = $(':checkbox[name=ancientone]').map(function () {
+  yark = $(":checkbox[name='ancientone']").map(function () {
     if (this.checked) {
       return this.value;
     }
@@ -43,11 +43,22 @@ define(["jquery"], function($) {
   console.log("Enemy:", chosen);
   }
 
+  function pickHerald(){
+    yark = $(":checkbox[name='herald']").map(function () {
+      if (this.checked) {
+        return this.value;
+      }
+    });
+    var chosen = chooseMe(yark, 1);
+    console.log("Herald:", chosen);
+  }
+
   $("#pickCharacters").click(pickCharacters);
   $("#pickAncientOne").click(pickAncientOne);
+  $("#pickHerald").click(pickHerald);
 
   $("#checkAllInv").click(function(event){
-    $(':checkbox[name=investigator]').each(function() {
+    $(":checkbox[name='investigator']").each(function() {
           this.checked = true;
       });
   }); //end
@@ -55,17 +66,17 @@ define(["jquery"], function($) {
 
   $("#checkAllAO").click(function(event){
     if ($(this).is(":checked")){
-      $('input:checkbox[name=ancientone]').each(function() {
+      $("input:checkbox[name='ancientone']").each(function() {
         this.checked = true;
       });
-      $('input:checkbox[name=check-control]').each(function() {
+      $("input:checkbox[name='check-control']").each(function() {
         this.checked = true;
       });
     } else {
-      $('input:checkbox[name=ancientone]').each(function() {
+      $("input:checkbox[name='ancientone']").each(function() {
         this.checked = false;
       });
-      $('input:checkbox[name=check-control]').each(function() {
+      $("input:checkbox[name='check-control']").each(function() {
         this.checked = false;
       });
     }
@@ -93,7 +104,8 @@ define(["jquery"], function($) {
   return {
     chooseMe: chooseMe,
     pickCharacters: pickCharacters,
-    pickAncientOne: pickAncientOne
+    pickAncientOne: pickAncientOne,
+    pickHerald: pickHerald
   };
 
 
