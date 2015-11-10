@@ -8,6 +8,8 @@
     <title>Ingame Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="/lib/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
@@ -20,7 +22,17 @@
           <div class="row"> <!-- ROW STARTER -->
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">Normal</button>
+                <button type="button" class="btn btn-default">Blessed</button>
+                <button type="button" class="btn btn-default">Cursed</button>
+              </div>
               <button id="dice" class="btn btn-default">Dice me</button>
+                <select id="state" name="state" class="selectpicker">
+                  <option class='filter-album' value="Normal">Normal</option>
+                  <option class='filter-album' value="Blessed">Blessed</option>
+                  <option class='filter-album' value="Cursed">Cursed</option>
+                </select>
             </div>
             <div class="col-xs-1"></div>
           </div>
@@ -30,8 +42,9 @@
         <p>2015 Mathew Ostrander</p>
     </footer>
 
-<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+     <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+     <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script> -->
     <script data-main="javascripts/go" src="lib/bower_components/requirejs/require.js"></script>
 </body>
 </html>
