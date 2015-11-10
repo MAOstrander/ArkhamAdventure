@@ -21,7 +21,7 @@ define(["jquery", "randomizer"], function($, randomizer) {
 		console.log("Ancient One: ", thing);
 	});
 
-	$("#quickStart").click(function(){
+	$(".quickStart").click(function(){
 		var quickChoice = allCharacters.slice(0);
 		var thing = randomizer.chooseMe(quickChoice, 8);
 		console.log("8 Heroes: ", thing);

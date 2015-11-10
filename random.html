@@ -1,93 +1,113 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Arkham Adventure Randomizer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Arkham Adventure Randomizers</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-
 <body>
+    <header>  
+      <div id="logo">
+        <h1><a href="index.html">Arkham Adventure</a></h1>
+      </div>
+    </header>
+        <div class="container-fluid">
+          <div class="row"> <!-- ROW STARTER -->
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+			    <div id="investigators">
+					<h3>Investigators</h3>
+					<input type="checkbox" name="investigator" value="Amanda Sharpe">Amanda Sharpe
+					<input type="checkbox" name="investigator" value="Ashcan Pete">Ashcan Pete
+					<input type="checkbox" name="investigator" value="Bob Jenkins">Bob Jenkins
+					<input type="checkbox" name="investigator" value="Carolyn Fern">Carolyn Fern
+					<input type="checkbox" name="investigator" value="Darrell Simmons">Darrell Simmons
+					<input type="checkbox" name="investigator" value="Dexter Drake">Dexter Drake
+					<input type="checkbox" name="investigator" value="Gloria Goldberg">Gloria Goldberg
+					<input type="checkbox" name="investigator" value="Harvey Walters">Harvey Walters
+					<input type="checkbox" name="investigator" value="Jenny Barnes">Jenny Barnes
+					<input type="checkbox" name="investigator" value="Joe Diamond">Joe Diamond
+					<input type="checkbox" name="investigator" value="Kate Winthrop">Kate Winthrop
+					<input type="checkbox" name="investigator" value="Mandy Thompson">Mandy Thompson
+					<input type="checkbox" name="investigator" value="Michael McGlen">Michael McGlen
+					<input type="checkbox" name="investigator" value="Monterey Jack">Monterey Jack
+					<input type="checkbox" name="investigator" value="Sister Mary">Sister Mary
+					<input type="checkbox" name="investigator" value="Vincent Lee">Vincent Lee
+				</div>
+				<div>
+					<button id="checkAllInv" class="btn btn-default">Check all Investigators</button>
+				</div>
+				<div>
+					<button id="pickCharacters" class="btn btn-default">Choose Characters</button>
+				  	<label for="player-number">Number of Players:</label>
+					<select id="player-number" name="player-number">
+			          <option value="1" selected="">1</option>
+			          <option value="2">2</option>
+			          <option value="3">3</option>
+			          <option value="4">4</option>
+			          <option value="5">5</option>
+			          <option value="6">6</option>
+			          <option value="7">7</option>
+			          <option value="8">8</option>
+			        </select>
+				</div>
+				<div id="ancientones">
+					<h3>Ancient Ones</h3>
+					<div class="base-game">
+						<input type="checkbox" name="ancientone" value="Azathoth" set="arkham">Azathoth
+						<input type="checkbox" name="ancientone" value="Cthulu" set="arkham">Cthulu
+						<input type="checkbox" name="ancientone" value="Hastur" set="arkham">Hastur
+						<input type="checkbox" name="ancientone" value="Ithaqua" set="arkham">Ithaqua
+						<input type="checkbox" name="ancientone" value="Nyarlathotep" set="arkham">Nyarlathotep
+						<input type="checkbox" name="ancientone" value="Shub-Niggurath" set="arkham">Shub-Niggurath
+						<input type="checkbox" name="ancientone" value="Yig" set="arkham">Yig
+						<input type="checkbox" name="ancientone" value="Yog-Sothoth" set="arkham">Yog-Sothoth
+					</div>
+					<div class="dunwich-horror">
+						<input type="checkbox" name="ancientone" value="Abhoth" set="dunwich">Abhoth
+						<input type="checkbox" name="ancientone" value="Glaaki" set="dunwich">Glaaki
+						<input type="checkbox" name="ancientone" value="Shudde M'ell" set="dunwich">Shudde M'ell
+						<input type="checkbox" name="ancientone" value="Tsathoggua" set="dunwich">Tsathoggua
+					</div>
+				</div>
+				<div>
+					<h4>Choose Ancient Ones by Expansion</h4>
+					<input type="checkbox" id="checkAllAO">Check all Ancient Ones
+					<input type="checkbox" name="check-control" value="arkham">Base Arkham Set
+					<input type="checkbox" name="check-control" value="dunwich">Dunwich Expansion
+				</div>
+				<div>
+					<button id="pickAncientOne" class="btn btn-default">Choose Ancient One</button>
+				</div>
+				<div id="heralds">
+					<h3>Heralds and Guardians</h3>
+						<input type="checkbox" name="herald" value="Mother Hydra" set="innsmouth">Mother Hydra
+						<input type="checkbox" name="herald" value="Father Dagon" set="innsmouth">Father Dagon
+						<input type="checkbox" name="herald" value="Bast" set="dunwich">Bast
+				</div>
+				<div>
+					<button id="pickHerald" class="btn btn-default">Choose Herald or Guardian</button>
+				</div>
+				<div>
+					<button id="pickAll" class="btn btn-default">Pick From Checked</button>
+					<button class="quickStart btn btn-default">Random All</button>
+				</div>
+            </div> <!-- END OF COL-XS-10 -->
+            <div class="col-xs-1"></div>
+          </div>
+      </div>
 
-	<div id="investigators">
-		<h3>Investigators</h3>
-		<input type="checkbox" name="investigator" value="Amanda Sharpe">Amanda Sharpe
-		<input type="checkbox" name="investigator" value="Ashcan Pete">Ashcan Pete
-		<input type="checkbox" name="investigator" value="Bob Jenkins">Bob Jenkins
-		<input type="checkbox" name="investigator" value="Carolyn Fern">Carolyn Fern
-		<input type="checkbox" name="investigator" value="Darrell Simmons">Darrell Simmons
-		<input type="checkbox" name="investigator" value="Dexter Drake">Dexter Drake
-		<input type="checkbox" name="investigator" value="Gloria Goldberg">Gloria Goldberg
-		<input type="checkbox" name="investigator" value="Harvey Walters">Harvey Walters
-		<input type="checkbox" name="investigator" value="Jenny Barnes">Jenny Barnes
-		<input type="checkbox" name="investigator" value="Joe Diamond">Joe Diamond
-		<input type="checkbox" name="investigator" value="Kate Winthrop">Kate Winthrop
-		<input type="checkbox" name="investigator" value="Mandy Thompson">Mandy Thompson
-		<input type="checkbox" name="investigator" value="Michael McGlen">Michael McGlen
-		<input type="checkbox" name="investigator" value="Monterey Jack">Monterey Jack
-		<input type="checkbox" name="investigator" value="Sister Mary">Sister Mary
-		<input type="checkbox" name="investigator" value="Vincent Lee">Vincent Lee
-	</div>
-	<div>
-		<button id="checkAllInv">Check all Investigators</button>
-	</div>
-	<div>
-		<button id="pickCharacters">Choose Characters</button>
-	  	<label for="player-number">Number of Players:</label>
-		<select id="player-number" name="player-number">
-          <option value="1" selected="">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-	</div>
-	<div id="ancientones">
-		<h3>Ancient Ones</h3>
-		<div class="base-game">
-			<input type="checkbox" name="ancientone" value="Azathoth" set="arkham">Azathoth
-			<input type="checkbox" name="ancientone" value="Cthulu" set="arkham">Cthulu
-			<input type="checkbox" name="ancientone" value="Hastur" set="arkham">Hastur
-			<input type="checkbox" name="ancientone" value="Ithaqua" set="arkham">Ithaqua
-			<input type="checkbox" name="ancientone" value="Nyarlathotep" set="arkham">Nyarlathotep
-			<input type="checkbox" name="ancientone" value="Shub-Niggurath" set="arkham">Shub-Niggurath
-			<input type="checkbox" name="ancientone" value="Yig" set="arkham">Yig
-			<input type="checkbox" name="ancientone" value="Yog-Sothoth" set="arkham">Yog-Sothoth
-		</div>
-		<div class="dunwich-horror">
-			<input type="checkbox" name="ancientone" value="Abhoth" set="dunwich">Abhoth
-			<input type="checkbox" name="ancientone" value="Glaaki" set="dunwich">Glaaki
-			<input type="checkbox" name="ancientone" value="Shudde M'ell" set="dunwich">Shudde M'ell
-			<input type="checkbox" name="ancientone" value="Tsathoggua" set="dunwich">Tsathoggua
-		</div>
-	</div>
-	<div>
-		<h4>Choose Ancient Ones by Expansion</h4>
-		<input type="checkbox" id="checkAllAO">Check all Ancient Ones
-		<input type="checkbox" name="check-control" value="arkham">Base Arkham Set
-		<input type="checkbox" name="check-control" value="dunwich">Dunwich Expansion
-	</div>
-	<div>
-		<button id="pickAncientOne">Choose Ancient One</button>
-	</div>
-	<div id="heralds">
-		<h3>Heralds and Guardians</h3>
-			<input type="checkbox" name="herald" value="Mother Hydra" set="innsmouth">Mother Hydra
-			<input type="checkbox" name="herald" value="Father Dagon" set="innsmouth">Father Dagon
-			<input type="checkbox" name="herald" value="Bast" set="dunwich">Bast
-	</div>
-	<div>
-		<button id="pickHerald">Choose Herald or Guardian</button>
-	</div>
-	<div>
-		<button id="pickAll">Randomly Select All</button>
-	</div>
+    <footer>
+        <p>2015 Mathew Ostrander</p>
+    </footer>
 
-
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script data-main="javascripts/go" src="lib/bower_components/requirejs/require.js"></script>
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <script data-main="javascripts/go" src="lib/bower_components/requirejs/require.js"></script>
 </body>
 </html>

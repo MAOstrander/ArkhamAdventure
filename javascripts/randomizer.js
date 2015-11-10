@@ -99,6 +99,7 @@ define(["jquery"], function($) {
   $("#pickAll").click(function(){
     pickCharacters();
     pickAncientOne();
+    pickHerald();
   });
 
   return {
