@@ -22,16 +22,28 @@
           <div class="row"> <!-- ROW STARTER -->
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">Normal</button>
-                <button type="button" class="btn btn-default">Blessed</button>
-                <button type="button" class="btn btn-default">Cursed</button>
-              </div>
               <button id="dice" class="btn btn-default">Dice me</button>
+              <select id="diceNumber" name="diceNumber" class="selectpicker">
+                  <option value="1" selected="selected">1 Die</option>
+                  <option value="2">2 Dice</option>
+                  <option value="3">3 Dice</option>
+                  <option value="4">4 Dice</option>
+                  <option value="5">5 Dice</option>
+                  <option value="6">6 Die</option>
+                  <option value="7">7 Dice</option>
+                  <option value="8">8 Dice</option>
+                  <option value="9">9 Dice</option>
+                  <option value="10">10 Die</option>
+                  <option value="11">11 Die</option>
+                  <option value="12">12 Dice</option>
+                  <option value="13">13 Dice</option>
+                  <option value="14">14 Dice</option>
+                  <option value="15">15 Dice</option>
+                </select>
                 <select id="state" name="state" class="selectpicker">
-                  <option class='filter-album' value="Normal">Normal</option>
-                  <option class='filter-album' value="Blessed">Blessed</option>
-                  <option class='filter-album' value="Cursed">Cursed</option>
+                  <option value="normal" selected="selected">Normal</option>
+                  <option value="blessed">Blessed</option>
+                  <option value="cursed">Cursed</option>
                 </select>
             </div>
             <div class="col-xs-1"></div>

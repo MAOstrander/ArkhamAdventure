@@ -20,17 +20,24 @@ define(["jquery"], function($) {
 			success = 5;
 		}
 
+		var successCount = 0;
+
 		for (var i =0; i < dice.length; i++){
 			if (dice[i] >= success) {
 				console.log("Success!");
+				successCount++;
 			}
 		}
+		return successCount;
 	}
 
 	$("#dice").click(function(){
-		var yark = rollD6(5);
-		console.log("yark", yark);
-		checkSuccess(yark);
+		var numDice = $("[name='diceNumber']").val();
+		var state = $("[name='state']").val();
+		var rolls = rollD6(numDice);
+		console.log("Roll of the dice:", rolls);
+		var rollResults = checkSuccess(rolls, state);
+		console.log("Roll Results: ", rollResults);
 	});
 	return {
 		rollD6:rollD6,
