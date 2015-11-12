@@ -1,7 +1,8 @@
-define(["jquery", "randomizer"], function($, randomizer) {
+define(["jquery", "randomizer", "victory"], function($, randomizer, victory) {
 	var allCharacters = ["Amanda Sharpe","test2","test3","test4","test5","test6","test7","test8","test9","test10","test11","test12"];
 	var allAncient = ["Azathoth","Test2","Test3","Test4","Test5","Test6","Test7","Test8","Test9","Test10","Test11","Test12"];
 	var allHerald = ["Father Dagon","Mother Hydra","Bast"];
+	var currentPlayers = 1;
 
 	$("#quickPick1").click(function(){
 		var quickChoice = allCharacters.slice(0);
@@ -34,5 +35,13 @@ define(["jquery", "randomizer"], function($, randomizer) {
 		thing = randomizer.chooseMe(quickChoice, 1);
 		console.log("Herald or Guardian: ", thing);
 	});
+
+	$(".addPlayer").click(function(){
+		if (currentPlayers <8) {
+			currentPlayers++
+			victory.addPlayer(currentPlayers);
+		}
+	});
+
 
 }); //END DEFINE FUNCTION
