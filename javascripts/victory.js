@@ -45,22 +45,21 @@ define(["jquery"], function($) {
 	function addPlayer(displayPlayer) {
 		console.log("current number of players:", displayPlayer);
 		var playerDom;
-		// var playerDom = "<div id='player" + displayPlayer +"'><label>Player "+ displayPlayer +" Name:
-		// 	<input type='text' name='player"+ displayPlayer +"'></label><label>Played as:<select name=
-		// 	'investigator"+ displayPlayer +"' class='selectpicker'>
-  //       <option>Amanda Sharpe</option>
-  //       <option>Bob Jenkins</option>
-  //       <option>Mandy Thompson</option> 
-  //       <option>Ashcan Pete</option>
-  //      </select></label><label><input type='radio' name='loan"+ displayPlayer +"' value='1'>
-  //      Bank Loan/Bankrupt</label><label><input type='radio' name='loan"+ displayPlayer +"' 
-  //      value='0' checked>No Loan</label><label>Number of Eldersigns Used:<input type='number' 
-  //      name='elder"+ displayPlayer +"' value='0' min='0'></label><label>Number of Gate Trophies:
-  //      <input type='number' name='gate"+ displayPlayer +"' value='0' min='0'></label><label>Number 
-  //      of Monster Trophies:<input type='number' name='monster"+ displayPlayer +"' value='0' min='0'>
-  //      </label><label><input type='radio' name='survive"+ displayPlayer +"' value='1' checked>I 
-  //      survived!</label><label><input type='radio' name='survive"+ displayPlayer +"' value='0'>I 
-  //      was Devoured</label></div>";
+		var playerDom = "<div id='player" + displayPlayer +"'><label>Player "+ displayPlayer +" Name:";
+		playerDom +=	"<input type='text' name='player"+ displayPlayer +"'></label><label>Played as:<select"
+		playerDom += "name='investigator"+ displayPlayer +"' class='selectpicker'>";
+    playerDom += "<option>Amanda Sharpe</option>";
+    playerDom += "<option>Bob Jenkins</option>";
+    playerDom += "<option>Mandy Thompson</option>";
+    playerDom += "<option>Ashcan Pete</option>";
+    playerDom += "</select></label><label><input type='radio' name='loan"+ displayPlayer +"' value='1'>";
+    playerDom += "Bank Loan/Bankrupt</label><label><input type='radio' name='loan"+ displayPlayer;
+    playerDom += "' value='0' checked>No Loan</label><label>Number of Eldersigns Used:<input type='number'"; 
+    playerDom += "name='elder"+ displayPlayer +"' value='0' min='0'></label><label>Number of Gate Trophies:";
+    playerDom += "<input type='number' name='gate"+ displayPlayer +"' value='0' min='0'></label><label>Number ";
+    playerDom += "of Monster Trophies:<input type='number' name='monster"+ displayPlayer +"' value='0' min='0'>";
+		playerDom += "</label><label><input type='radio' name='survive"+ displayPlayer +"' value='1' checked>I survived!";
+    playerDom += "</label><label><input type='radio' name='survive"+ displayPlayer +"' value='0'>I was Devoured</label></div>";
 
     $("#scoreForm").append(playerDom);
 
