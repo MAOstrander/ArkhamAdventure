@@ -23,7 +23,7 @@ Victory (After the game)
 
 These priorities also serve as the basic guideline for menu functionality. Upon completion of all this an API may be developed and implemented in order to include items, locations, mythos, and other game pieces.
 
-The current site will be redesigned to be a mobile first site using Bootstrap to handle the spacing and menus.
+The current site will be redesigned to be a mobile app using Ionic and as such the priorities and features will have to be re-evaluated.
 
 
 The majority of the 1920's slang was obtained from http://local.aaca.org/bntc/slang/slang.htm
