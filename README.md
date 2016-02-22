@@ -4,7 +4,7 @@ Creating a site to enhance the ambiance of Arkham Horror
 
 Installing and Using:
 
--As it is, this uses require to handle all the dependencies. As such, just loading it as a scriptless html page won't work.
+-As it is, this uses RequireJS to handle all the dependencies. As such, just loading it as a scriptless html page won't work.
 
 -If you want to play around with the current features you will have to clone or fork the repository and run it on a local server from your command-line/terminal
 
